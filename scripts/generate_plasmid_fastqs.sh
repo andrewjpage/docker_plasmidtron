@@ -1,0 +1,1 @@
+for i in {25..100..5}; do fastaq to_perfect_reads --seed ${i} LN890519_plasmid.fasta - 400 20 ${i} 125 | fastaq deinterleave - LN890519_plasmid_${i}x_1.fastq.gz LN890519_plasmid_${i}x_2.fastq.gz ; done
